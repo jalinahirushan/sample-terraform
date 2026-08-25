@@ -1,0 +1,8 @@
+project_name                 = "orders-api"
+environment                  = "production"
+aws_region                   = "ap-south-1"
+container_image              = "499591338187.dkr.ecr.ap-south-1.amazonaws.com/orders-api:1.0.0"
+desired_count                = 2
+database_instance_class      = "db.t4g.micro"
+database_multi_az            = true
+database_deletion_protection = true
