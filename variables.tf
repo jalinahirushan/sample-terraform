@@ -75,9 +75,7 @@ variable "database_multi_az" {
 variable "database_deletion_protection" {
   description = "Protect the production database from accidental deletion."
   type        = bool
-  # DELIBERATE DEMO REGRESSION: production requires this to be true. Terraform
-  # init and validate pass, while plan fails on aws_db_instance.orders.
-  default = false
+  default     = true
 }
 
 variable "ci_offline_plan" {
